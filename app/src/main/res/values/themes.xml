@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AndroidAssignment" parent="Theme.AppCompat">
+        <item name="android:colorPrimary">@color/purple_500</item>
+        <item name="android:colorPrimaryDark">@color/purple_700</item>
+        <item name="android:colorAccent">@color/purple_200</item>
+    </style>
+
+    <style name="Theme.AndroidAssignment.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AndroidAssignment.AppBarOverlay" parent="Theme.AndroidAssignment" />
+
+    <style name="Theme.AndroidAssignment.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
