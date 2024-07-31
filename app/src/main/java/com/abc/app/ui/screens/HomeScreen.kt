@@ -18,7 +18,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.abc.app.HomeViewModel
+import com.abc.app.ui.screens.components.ListItem
+import com.abc.app.ui.screens.components.pagerWithDotIndicator
+import com.abc.app.ui.screens.components.stickerHeaderSearchBar
+import com.abc.app.viewmodels.HomeViewModel
 
 @Preview
 @Composable

@@ -1,4 +1,8 @@
-package com.abc.app
+package com.abc.app.ui.screens.states
+
+import com.abc.app.data.models.BottomSheetItem
+import com.abc.app.data.models.MainItem
+import com.abc.app.data.models.SubItem
 
 data class HomeUiState(
     val items: List<MainItem> = emptyList(),

@@ -16,7 +16,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.abc.app.BottomSheetItem
+import com.abc.app.data.models.BottomSheetItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -46,7 +46,7 @@ fun BottomSheet(list: List<BottomSheetItem>, onDismiss: () -> Unit) {
                             .padding(all = 8.dp)
                     ) {
                         Text(
-                            text = "List ${index + 1} (${item.count})",
+                            text = "List ${index + 1}(${item.count})",
                             style = MaterialTheme.typography.titleMedium
                         )
                         item.characterCount.forEach { (character, count) ->

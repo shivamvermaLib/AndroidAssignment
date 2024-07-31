@@ -1,19 +1,11 @@
-package com.abc.app
+package com.abc.app.data.repository
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.debounce
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.stateIn
+import com.abc.app.data.models.BottomSheetItem
+import com.abc.app.data.models.MainItem
+import com.abc.app.data.models.SubItem
 import javax.inject.Inject
 
-@HiltViewModel
-class HomeViewModel @Inject constructor() : ViewModel() {
+class ItemRepository @Inject constructor() {
     private val items: List<MainItem> = listOf(
         MainItem(
             imageUrl = "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-1376930-2662116.jpg&fm=jpg",
@@ -209,11 +201,12 @@ class HomeViewModel @Inject constructor() : ViewModel() {
         )
     )
 
-    private val _listFlow = MutableStateFlow(items)
-    private val _selectedMainItemIndex = MutableStateFlow(0)
-    private val _searchQueryFlow = MutableStateFlow("")
-    private val _bottomSheetItemsFlow = _listFlow.map { mainItems ->
-        mainItems.map { mainItem ->
+    fun getItems(): List<MainItem> {
+        return items
+    }
+
+    fun getBottomSheetItems(): List<BottomSheetItem> {
+        return getItems().map { mainItem ->
             BottomSheetItem(
                 mainItem.list.size,
                 mainItem.list.map { it.title.lowercase().toList() }.flatten()
@@ -222,35 +215,6 @@ class HomeViewModel @Inject constructor() : ViewModel() {
                     .associate { it.key to it.value }
             )
         }
-    }
-
-    @OptIn(FlowPreview::class)
-    val uiStateFlow =
-        combine(
-            _listFlow,
-            _selectedMainItemIndex,
-            _searchQueryFlow.debounce(300L),
-            _bottomSheetItemsFlow
-        ) { list, selectedItemIndex, search, bottomSheetList ->
-            val item = list[selectedItemIndex]
-            HomeUiState(
-                list,
-                item,
-                item.list.filter {
-                    search.isEmpty() || (search.isNotEmpty() && (it.title.lowercase()
-                        .contains(search) || it.desc.lowercase().contains(search)))
-                },
-                bottomSheetList
-            )
-        }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000L), HomeUiState())
-
-
-    fun setSearch(search: String) {
-        _searchQueryFlow.value = search.lowercase()
-    }
-
-    fun setPageIndex(itemIndex: Int) {
-        _selectedMainItemIndex.value = itemIndex
     }
 
 }

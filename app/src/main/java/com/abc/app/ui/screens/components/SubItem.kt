@@ -1,4 +1,4 @@
-package com.abc.app.ui.screens
+package com.abc.app.ui.screens.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.abc.app.SubItem
+import com.abc.app.data.models.SubItem
 
 @Composable
 fun ListItem(subItem: SubItem) {

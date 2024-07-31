@@ -1,4 +1,4 @@
-package com.abc.app.ui.screens
+package com.abc.app.ui.screens.components
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
