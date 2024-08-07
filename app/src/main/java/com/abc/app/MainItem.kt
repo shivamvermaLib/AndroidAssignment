@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 data class MainItem(
     val imageUrl: String, val list: List<SubItem>

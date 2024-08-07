@@ -1,4 +1,4 @@
-package com.shivam.androidassignment.ui.theme
+package com.abc.app.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

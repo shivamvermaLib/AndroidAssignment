@@ -1,4 +1,4 @@
-package com.shivam.androidassignment.ui.screens
+package com.abc.app.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.shivam.androidassignment.MainItem
-import com.shivam.androidassignment.ui.utils.DotIndicators
+import com.abc.app.MainItem
+import com.abc.app.ui.utils.DotIndicators
 
 
 @OptIn(ExperimentalFoundationApi::class)

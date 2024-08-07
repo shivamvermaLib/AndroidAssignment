@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 data class HomeUiState(
     val items: List<MainItem> = emptyList(),

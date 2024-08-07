@@ -1,4 +1,4 @@
-package com.shivam.androidassignment.ui.utils
+package com.abc.app.ui.utils
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background

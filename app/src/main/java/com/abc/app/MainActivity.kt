@@ -1,11 +1,11 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.shivam.androidassignment.ui.screens.HomeScreen
-import com.shivam.androidassignment.ui.theme.AndroidAssignmentTheme
+import com.abc.app.ui.screens.HomeScreen
+import com.abc.app.ui.theme.AndroidAssignmentTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

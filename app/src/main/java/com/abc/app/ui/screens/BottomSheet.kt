@@ -1,4 +1,4 @@
-package com.shivam.androidassignment.ui.screens
+package com.abc.app.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.shivam.androidassignment.BottomSheetItem
+import com.abc.app.BottomSheetItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

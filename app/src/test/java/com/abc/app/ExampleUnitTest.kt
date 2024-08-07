@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 import org.junit.Test
 
