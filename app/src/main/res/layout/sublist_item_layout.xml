@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="@dimen/sub_item_padding">
 
     <TextView
         android:id="@+id/sublist_item_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="@dimen/sub_item_text_size"
         android:textColor="@android:color/black" />
 </LinearLayout>

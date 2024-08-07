@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="@dimen/item_padding">
 
     <ImageView
         android:id="@+id/item_image"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/item_image_size"
+        android:layout_height="@dimen/item_image_size"
+        android:layout_marginEnd="@dimen/item_image_margin_end"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -22,15 +22,15 @@
             android:id="@+id/item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="@dimen/item_title_margin_bottom"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="@dimen/item_title_text_size" />
 
         <TextView
             android:id="@+id/item_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/darker_gray"
-            android:textSize="14sp" />
+            android:textSize="@dimen/item_desc_text_size" />
     </LinearLayout>
 </LinearLayout>

@@ -1,8 +1,8 @@
-package com.shivam.androidassignment.state
+package com.abc.app.state
 
-import com.shivam.androidassignment.data.models.BottomSheetItem
-import com.shivam.androidassignment.data.models.MainItem
-import com.shivam.androidassignment.data.models.SubItem
+import com.abc.app.data.models.BottomSheetItem
+import com.abc.app.data.models.MainItem
+import com.abc.app.data.models.SubItem
 
 data class HomeUiState(
     val items: List<MainItem> = emptyList(),

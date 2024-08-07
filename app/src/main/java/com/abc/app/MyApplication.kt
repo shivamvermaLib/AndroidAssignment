@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

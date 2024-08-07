@@ -2,4 +2,19 @@
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_input_padding_horizontal">6dp</dimen>
+    <dimen name="text_input_height">56dp</dimen>
+    <dimen name="viewpager_height">260dp</dimen>
+    <dimen name="bottom_sheet_card_margin">8dp</dimen>
+    <dimen name="bottom_sheet_card_padding">16dp</dimen>
+    <dimen name="bottom_sheet_card_content_padding">10dp</dimen>
+    <dimen name="bottom_sheet_card_title_margin_bottom">8dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
+    <dimen name="item_image_size">60dp</dimen>
+    <dimen name="item_image_margin_end">16dp</dimen>
+    <dimen name="item_title_margin_bottom">4dp</dimen>
+    <dimen name="item_title_text_size">18sp</dimen>
+    <dimen name="item_desc_text_size">14sp</dimen>
+    <dimen name="sub_item_text_size">16sp</dimen>
+    <dimen name="sub_item_padding">8dp</dimen>
 </resources>

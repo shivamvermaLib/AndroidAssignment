@@ -1,4 +1,4 @@
-package com.shivam.androidassignment
+package com.abc.app.ui
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -7,10 +7,10 @@ import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
-import com.shivam.androidassignment.adapter.ImageAdapter
-import com.shivam.androidassignment.adapter.ItemAdapter
-import com.shivam.androidassignment.databinding.ActivityMainBinding
-import com.shivam.androidassignment.viewmodels.HomeViewModel
+import com.abc.app.adapter.ImageAdapter
+import com.abc.app.adapter.ItemAdapter
+import com.abc.app.databinding.ActivityMainBinding
+import com.abc.app.viewmodels.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -28,8 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
-//                super.onPageSelected(position)
-                println("position = [${position}]")
                 homeViewModel.setPageIndex(position)
             }
         })
@@ -47,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.fab.setOnClickListener { _ ->
-            val sheet = ModalBottomSheetDialog(homeViewModel)
+            val sheet = ModalBottomSheetDialog()
             sheet.show(supportFragmentManager, ModalBottomSheetDialog.TAG)
         }
     }

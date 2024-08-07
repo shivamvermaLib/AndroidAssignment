@@ -1,9 +1,9 @@
-package com.shivam.androidassignment.viewmodels
+package com.abc.app.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shivam.androidassignment.state.HomeUiState
-import com.shivam.androidassignment.data.repository.ItemRepository
+import com.abc.app.state.HomeUiState
+import com.abc.app.data.repository.ItemRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow

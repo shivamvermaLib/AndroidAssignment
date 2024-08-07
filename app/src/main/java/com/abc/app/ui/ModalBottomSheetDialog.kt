@@ -1,21 +1,23 @@
-package com.shivam.androidassignment
+package com.abc.app.ui
 
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.shivam.androidassignment.adapter.BottomSheetItemAdapter
-import com.shivam.androidassignment.databinding.ItemBottomSheetBinding
-import com.shivam.androidassignment.viewmodels.HomeViewModel
+import com.abc.app.adapter.BottomSheetItemAdapter
+import com.abc.app.databinding.ItemBottomSheetBinding
+import com.abc.app.viewmodels.HomeViewModel
 import kotlinx.coroutines.launch
 
-class ModalBottomSheetDialog(private val viewModel: HomeViewModel) : BottomSheetDialogFragment() {
+class ModalBottomSheetDialog : BottomSheetDialogFragment() {
     private lateinit var binding: ItemBottomSheetBinding
+    private val viewModel: HomeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

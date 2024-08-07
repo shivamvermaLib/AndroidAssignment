@@ -1,4 +1,4 @@
-package com.shivam.androidassignment.data.models
+package com.abc.app.data.models
 
 data class BottomSheetItem(
     val count: Int,

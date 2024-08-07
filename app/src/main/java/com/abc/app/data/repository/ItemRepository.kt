@@ -1,8 +1,8 @@
-package com.shivam.androidassignment.data.repository
+package com.abc.app.data.repository
 
-import com.shivam.androidassignment.data.models.BottomSheetItem
-import com.shivam.androidassignment.data.models.MainItem
-import com.shivam.androidassignment.data.models.SubItem
+import com.abc.app.data.models.BottomSheetItem
+import com.abc.app.data.models.MainItem
+import com.abc.app.data.models.SubItem
 import javax.inject.Inject
 
 class ItemRepository @Inject constructor() {

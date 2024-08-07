@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.shivam.androidassignment"
+    namespace = "com.abc.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.shivam.androidassignment"
+        applicationId = "com.abc.app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -62,6 +62,7 @@ dependencies {
 
     implementation(libs.coil)
 
+    implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
